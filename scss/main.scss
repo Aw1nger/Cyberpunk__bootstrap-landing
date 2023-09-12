@@ -1,0 +1,76 @@
+@import "base/var";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "base/base";
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.block {
+  border: 3px solid $blue;
+  background: $gray;
+  text-align: center;
+}
+
+.header {
+  background: url(../assets/header__bg1--mobile.jpg) no-repeat;
+  min-height: 763px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__card {
+    background: $yellow;
+    max-width: 624px;
+    min-height: 210px;
+    border-radius: 0;
+    clip-path: polygon(14% 0%, 100% 0, 100% 80%, 86% 100%, 0 100%, 0% 20%);
+  }
+
+  &__card-btn {
+    background: $black;
+    color: $yellow;
+    border: none;
+    padding: 19px 65px;
+    border-radius: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  &__card-btn:hover,
+  &__card-btn:focus,
+  &__card-btn:active {
+    color: $yellow;
+    transform: scale(1.1);
+    background: $black !important;
+  }
+
+}
+
+.night-citi {
+
+  padding: 70px 0;
+
+  &__img {
+    width: 100%;
+    clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+  }
+
+  &__title {
+    text-align: start;
+  }
+
+  &__text {
+    color: $gray;
+  }
+
+  @media (min-width: 992px) {
+    &__imgbox-flex {
+      display: flex !important;
+      flex-direction: row !important;
+    }
+  }
+}
+
+
+
