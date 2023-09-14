@@ -1,4 +1,5 @@
 @import "base/var";
+@import "base/assist";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "base/base";
 
@@ -7,25 +8,56 @@
   padding: 0 12px;
 }
 
-.block {
-  border: 3px solid $blue;
-  background: $gray;
-  text-align: center;
-}
-
 .header {
   background: url(../assets/header__bg1--mobile.jpg) no-repeat;
   min-height: 763px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: header__bg-switch 10s ease-in-out infinite backwards;
+
+  @keyframes header__bg-switch {
+
+    from {
+      background: url(../assets/header__bg1--mobile.jpg) no-repeat;
+    }
+    
+    31% {
+      background: url(../assets/header__bg1--mobile.jpg) no-repeat;
+    }
+
+    35% {
+      background: url(../assets/header__bg2--mobile.jpg) no-repeat;
+    }
+
+    64% {
+      background: url(../assets/header__bg2--mobile.jpg) no-repeat;
+    }
+
+    68% {
+      background: url(../assets/header__bg3--mobile.jpg) no-repeat;
+    }
+
+    98% {
+      background: url(../assets/header__bg3--mobile.jpg) no-repeat;
+    }
+
+    to {
+      background: url(../assets/header__bg1--mobile.jpg) no-repeat;
+    }
+    
+  }
 
   &__card {
-    background: $yellow;
-    max-width: 624px;
+    background: url(../assets/header-card__bg--mobile.svg) center no-repeat;
+    max-width: 320px;
     min-height: 210px;
+    border: 0;
     border-radius: 0;
-    clip-path: polygon(14% 0%, 100% 0, 100% 80%, 86% 100%, 0 100%, 0% 20%);
+  }
+
+  .card-title {
+    margin-bottom: 0;
   }
 
   &__card-btn {
@@ -51,17 +83,26 @@
 
   padding: 70px 0;
 
-  &__img {
-    width: 100%;
-    clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
-
+  
   &__title {
     text-align: start;
   }
-
+  
   &__text {
     color: $gray;
+  }
+
+  &__imgbox {
+    padding-top: 70px;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 
   @media (min-width: 992px) {
@@ -72,5 +113,51 @@
   }
 }
 
+.play {
+
+  position: relative;
+  padding: 130px 0;
+  background: url(../assets/play__noise-bg-top.png) top repeat-x,
+  url(../assets/play__noise-bg-bot.png) bottom repeat-x;
+  background-color: $black;
+
+  &__action {
+    width: 132px;
+    height: 132px;
+    transform: rotate(-45deg);
+    background: url(../assets/action.svg) center no-repeat;
+  }
+
+  &__action-text {
+    color: $yellow;
+    font-family: Archangelsk;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__xss,
+  &__ps5 {
+    max-width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    &__action {
+      width: calc(52px + 2vw);
+      height: calc(52px + 2vw);
+      position: absolute;
+      top: 67px;
+      left: calc(1px + 10vw);
+      background: url(../assets/action--md.svg) center no-repeat;
+      background-size: contain;
+    }
+
+    &__action-text {
+      font-size: calc(12px + 0.9vw);
+    }
+  }
+
+}
 
 
