@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <title>Cyberpunk</title>
   </head>
   <body>
@@ -73,7 +73,9 @@
         </div>
       </nav>
       <div class="card header__card">
-        <div class="card-body align-items-center d-flex flex-column justify-content-around">
+        <div
+          class="card-body align-items-center d-flex flex-column justify-content-around"
+        >
           <h1 class="card-title">Доступно на всех платформах</h1>
           <a href="#" class="btn header__card-btn">Узнать больше</a>
         </div>
@@ -81,47 +83,64 @@
     </header>
     <main class="main">
       <section class="night-citi">
-          <div class="container">
-            <div class="night-citi__textbox align-content-start">
-              <h1 class="night-citi__title">Найт-Сити изменит тебя навсегда!</h1>
-              <p class="night-citi__text">
-                <span class="text-primary">Cyberpunk 2077</span> — приключенческая
-                ролевая игра, действие которой происходит в мегаполисе Найт-Сити,
-                где власть, роскошь и модификации тела ценятся выше всего. Ты
-                играешь за V, наёмника в поисках устройства, позволяющего обрести
-                бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры
-                своего персонажа, исследуя открытый мир, где твои поступки влияют
-                на ход сюжета и всё, что тебя окружает.
-              </p>
-            </div>
+        <div class="container">
+          <div class="night-citi__textbox align-content-start">
+            <h1 class="night-citi__title">Найт-Сити изменит тебя навсегда!</h1>
+            <p class="night-citi__text">
+              <span class="text-primary">Cyberpunk 2077</span> — приключенческая
+              ролевая игра, действие которой происходит в мегаполисе Найт-Сити,
+              где власть, роскошь и модификации тела ценятся выше всего. Ты
+              играешь за V, наёмника в поисках устройства, позволяющего обрести
+              бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры
+              своего персонажа, исследуя открытый мир, где твои поступки влияют
+              на ход сюжета и всё, что тебя окружает.
+            </p>
           </div>
-          <div class="night-citi__imgbox text-center">
-            <div class="container-fluid">
-              <div class="row d-sm-flex flex-sm-column night-citi__imgbox-flex g-32">
-                <div class="col p-0">
-                  <div class="container-fluid"><div class="row d-lg-flex flex-lg-column g-32">
-                      <div class="col-sm p-0">
-                        <img src="assets/night-citi-sm--01.jpg" alt="" class="night-citi__img">
-                      </div>
-                      <div class="col-sm p-0">
-                        <img src="assets/night-citi-sm--02.jpg" alt="" class="night-citi__img">
-                      </div>
+        </div>
+        <div class="night-citi__imgbox text-center">
+          <div class="container-fluid">
+            <div
+              class="row d-sm-flex flex-sm-column night-citi__imgbox-flex g-32"
+            >
+              <div class="col p-0">
+                <div class="container-fluid">
+                  <div class="row d-lg-flex flex-lg-column g-32">
+                    <div class="col-sm p-0">
+                      <img
+                        src="assets/night-citi-sm--01.jpg"
+                        alt=""
+                        class="night-citi__img"
+                      />
                     </div>
-                  </div>  
+                    <div class="col-sm p-0">
+                      <img
+                        src="assets/night-citi-sm--02.jpg"
+                        alt=""
+                        class="night-citi__img"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm p-0">
-                  <img src="assets/night-citi-sm--03.jpg" alt="" class="night-citi__img">
-                </div>
+              </div>
+              <div class="col-sm p-0">
+                <img
+                  src="assets/night-citi-sm--03.jpg"
+                  alt=""
+                  class="night-citi__img"
+                />
               </div>
             </div>
           </div>
+        </div>
       </section>
       <section class="play">
         <div class="container">
           <div class="play__wrapper">
-            <div class="row flex-md-row-reverse">
+            <div class="row flex-md-row-reverse d-lg-none">
               <div class="col-md">
-                <div class="row justify-content-center align-items-center flex-md-column g-2">
+                <div
+                  class="row justify-content-center align-items-center flex-md-column g-2"
+                >
                   <div class="col">
                     <img class="play__xss" src="assets/xss.png" alt="" />
                   </div>
@@ -130,9 +149,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md d-flex ">
+              <div class="col-md d-flex">
                 <div class="row align-content-center g-2">
-                  <div class="play__action d-flex justify-content-center align-items-center">
+                  <div
+                    class="play__action d-flex justify-content-center align-items-center"
+                  >
                     <p class="play__action-text">Акция</p>
                   </div>
                   <div class="col-xl">
@@ -155,7 +176,7 @@
                         <div class="row mb-3">
                           <input
                             type="text"
-                            class="form-control"
+                            class="form-control play__form-name"
                             id="inputAddress"
                             placeholder="Как тебя зовут?"
                           />
@@ -163,29 +184,42 @@
                         <div class="row mb-3">
                           <input
                             type="text"
-                            class="form-control"
+                            class="form-control play__form-email"
                             id="inputAddress"
                             placeholder="Твой е-mail"
                           />
                         </div>
-                        <div class="row mb-3">
-                          <input class="form-control" type="file" id="formFile" />
+                        <div
+                          class="row mb-3 play__form-file-cont align-items-center"
+                        >
+                          <input
+                            class="form-control play__form-file"
+                            type="file"
+                            id="formFile"
+                            placeholder=""
+                          />
+                          <label for="formFile" class="play__form-file__title">
+                            Прикрепить скриншот
+                          </label>
                         </div>
                         <div class="row mb-3">
-                          <button type="button" class="btn btn-primary">
+                          <button
+                            type="button"
+                            class="btn play__form-file__btn"
+                          >
                             Отправить
                           </button>
                         </div>
                         <div class="row mb-3">
-                          <div class="form-check">
+                          <div class="form-check play__check-form">
                             <input
-                              class="form-check-input"
+                              class="form-check-input play__check-input"
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
                             />
                             <label
-                              class="form-check-label"
+                              class="form-check-label play__check-label"
                               for="flexCheckDefault"
                             >
                               Согласен на обработку персональных данных
@@ -198,11 +232,236 @@
                 </div>
               </div>
             </div>
+            <div
+              class="row flex-md-row-reverse d-none d-sm-none d-md-none d-md-none d-lg-flex"
+            >
+              <div class="row">
+                <div
+                  class="col-3 play__action d-flex justify-content-center align-items-center"
+                >
+                  <p class="play__action-text">Акция</p>
+                </div>
+                <div class="col-9">
+                  <h2 class="h2">Играй и выигрывай!</h2>
+                </div>
+                <div class="col-12">
+                  <p class="play__text">
+                    Играй в
+                    <span class="text-primary">Cyberpunk 2077 </span> и получи
+                    возможность выиграть консоль
+                    <span class="text-primary">Xbox Series X</span> или
+                    <span class="text-primary">Sony PlayStation 5!</span>
+                    Заполни форму ниже и приложи скриншот о покупке игры. Итоги
+                    розыгрыша будут подведены 1 февраля. Удачи! ;)
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="container">
+                    <form>
+                      <div class="row mb-3">
+                        <input
+                          type="text"
+                          class="form-control play__form-name"
+                          id="inputAddress"
+                          placeholder="Как тебя зовут?"
+                        />
+                      </div>
+                      <div class="row mb-3">
+                        <input
+                          type="text"
+                          class="form-control play__form-email"
+                          id="inputAddress"
+                          placeholder="Твой е-mail"
+                        />
+                      </div>
+                      <div
+                        class="row mb-3 play__form-file-cont align-items-center"
+                      >
+                        <input
+                          class="form-control play__form-file"
+                          type="file"
+                          id="formFile"
+                          placeholder=""
+                        />
+                        <label for="formFile" class="play__form-file__title">
+                          Прикрепить скриншот
+                        </label>
+                      </div>
+                      <div class="row mb-3">
+                        <button type="button" class="btn play__form-file__btn">
+                          Отправить
+                        </button>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="form-check play__check-form">
+                          <input
+                            class="form-check-input play__check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label play__check-label"
+                            for="flexCheckDefault"
+                          >
+                            Согласен на обработку персональных данных
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div
+                    class="row justify-content-center align-items-center g-2"
+                  >
+                    <div class="col">
+                      <img class="play__xss" src="assets/xss.png" alt="" />
+                    </div>
+                    <div class="col">
+                      <img class="play__ps5" src="assets/ps5.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hp">
+        <div class="container">
+          <div class="hp__wrapper">
+            <div class="row">
+              <div class="col hp__imgbox">
+                <img src="assets/hp_img1.png" alt="" class="hp__img" />
+                <div class="row">
+                  <div class="col">
+                    <img src="assets/hp_img2.svg" alt="" class="hp__img" />
+                  </div>
+                  <div class="col">
+                    <img src="assets/hp_img3.svg" alt="" class="hp__img" />
+                  </div>
+                  <div class="col">
+                    <img src="assets/hp__img4.svg" alt="" class="hp__img" />
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h1 class="hp__title">Полное погружение вместе с HP</h1>
+                <p class="hp__text">
+                  Погрузись в современные экшен-игры с реалистичным изображением
+                  с помощью монитора с диагональю 23,8 дюйма, созданном для
+                  отображения максимально насыщенных цветов. Успевай реагировать
+                  на любые события с временем отклика 1 мс и частотой в 144 Гц!
+                </p>
+                <ul class="hp__list">
+                  <li class="hp__list-item">
+                    <img
+                      src="assets/hp_icon1.svg"
+                      alt=""
+                      class="hp__list-img"
+                    />
+                    Яркие насыщенные цвета
+                  </li>
+                  <li class="hp__list-item">
+                    <img
+                      src="assets/hp_icon2.svg"
+                      alt=""
+                      class="hp__list-img"
+                    />
+                    Кристальная четкость изображения
+                  </li>
+                  <li class="hp__list-item">
+                    <img
+                      src="assets/hp_icon3.svg"
+                      alt=""
+                      class="hp__list-img"
+                    />
+                    Быстрые движения и плавный геймплей
+                  </li>
+                </ul>
+                <button type="button" class="btn hp__other-btn">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="buy">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col buy__imgbox">
+              <img src="assets/buy_img--mobile.jpg" alt="" class="buy__img" />
+            </div>
+            <div class="col buy__textbox">
+              <h2 class="buy__title">Купить игру Cyberpunk 2077</h2>
+              <p class="buy__text">В комплект входит:</p>
+              <ul class="buy__list">
+                <li class="buy__list-item">
+                  <img
+                    src="assets/buy__img1.svg"
+                    alt=""
+                    class="buy__list-img"
+                  />
+                  <p class="buy__list-text">Футляр с игровыми дисками</p>
+                </li>
+                <li class="buy__list-item">
+                  <img
+                    src="assets/buy__img2.svg"
+                    alt=""
+                    class="buy__list-img"
+                  />
+                  <p class="buy__list-text">
+                    Футляр с кодом для загрузки игры и дисками (pc)
+                  </p>
+                </li>
+                <li class="buy__list-item">
+                  <img
+                    src="assets/buy__img3.svg"
+                    alt=""
+                    class="buy__list-img"
+                  />
+                  <div class="buy__list-text">
+                    Справочник с информацией об игровом мире
+                  </div>
+                </li>
+              </ul>
+              <p class="buy__text">Выберите платформу:</p>
+              <div class="row">
+                <img src="assets/buy_pc.svg" alt="" class="buy__platform-img" />
+                <img src="assets/buy_xbox.svg" alt="" class="buy__platform-img" />
+              </div>
+              <div class="row">
+                <img src="assets/buy_stadia.svg" alt="" class="buy__platform-img" />
+                <img src="assets/buy_ps4.svg" alt="" class="buy__platform-img" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__top">
+          <div class="col">
+            <div class="col">
+              <img src="assets/footer_logo.svg" alt="" class="footer__logo">
+            </div>
+            <div class="col">
+              <img src="assets/footer_company-logo.svg" alt="" class="footer__company-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">Лицензия</div>
+            <div class="col">Политика конфиденциальности</div>
+          </div>
+        </div>
+        <div class="row footer_bot">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
+      </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

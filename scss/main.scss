@@ -142,6 +142,119 @@
     max-width: 100%;
   }
 
+  &__form-name {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $gray;
+    padding: 13px 0 13px;
+  }
+
+  &__form-name:focus {
+    color: #FFF;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__form-email {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $gray;
+    padding: 13px 0 13px;
+  }
+
+  &__form-email:focus {
+    color: #FFF;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__form-file-cont {
+    min-height: 120px;
+    border: 1px dashed $gray;
+    justify-content: center;
+  }
+
+  &__form-file {
+    display: none;
+  }
+
+  &__form-file__title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+
+  &__form-file__btn {
+    background: $yellow;
+    color: $black;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  &__form-file__btn:hover,
+  &__form-file__btn:focus,
+  &__form-file__btn:active {
+    color: $black;
+    transform: scale(1.1);
+    background: $yellow !important;
+  }
+
+  &__check-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__check-input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    margin-top: 0;
+    border-radius: 0;
+    border: 1px solid $gray;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &__check-input:checked[type=checkbox] {
+    background-image: url(../assets/check.svg);
+    border: 1px solid $gray;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &__check-label {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
   @media (max-width: 767px) {
     &__action {
       width: calc(52px + 2vw);
@@ -160,4 +273,28 @@
 
 }
 
+.hp {
+  background-color: $yellow;
+
+  &__other-btn {
+    background: $black;
+    color: $yellow;
+    border: none;
+    padding: 19px 65px;
+    border-radius: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  &__other-btn:hover,
+  &__other-btn:focus,
+  &__other-btn:active {
+    color: $yellow;
+    transform: scale(1.1);
+    background: $black !important;
+  }
+}
+
+.buy {
+  background-color: $black;
+}
 

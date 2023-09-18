@@ -27,6 +27,15 @@ h1 {
   line-height: normal;
 }
 
+h2 {
+  color: $white;
+  font-family: Archangelsk;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 h1, h2, p {
   margin: 0;
 }
@@ -37,4 +46,8 @@ h1, h2, p {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+li {
+  list-style: none;
 }
