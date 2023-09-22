@@ -9,7 +9,9 @@
 }
 
 .header {
+  position: relative;
   background: url(../assets/header__bg1--mobile.jpg) no-repeat;
+  background-size: 100% 100%;
   min-height: 763px;
   display: flex;
   flex-direction: column;
@@ -17,11 +19,10 @@
   animation: header__bg-switch 10s ease-in-out infinite backwards;
 
   @keyframes header__bg-switch {
-
     from {
       background: url(../assets/header__bg1--mobile.jpg) no-repeat;
     }
-    
+
     31% {
       background: url(../assets/header__bg1--mobile.jpg) no-repeat;
     }
@@ -45,10 +46,21 @@
     to {
       background: url(../assets/header__bg1--mobile.jpg) no-repeat;
     }
-    
+  }
+
+  &__nav-wrapper {
+    padding-top: 20px;
+  }
+
+  &__logobox {
+    display: flex;
+    justify-content: center;
   }
 
   &__card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     background: url(../assets/header-card__bg--mobile.svg) center no-repeat;
     max-width: 320px;
     min-height: 210px;
@@ -77,10 +89,58 @@
     background: $black !important;
   }
 
+  @media (min-width: 524px) {
+    background: url(../assets/header__bg1--md.jpg) no-repeat center;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: header__bg-switch 10s ease-in-out infinite backwards;
+  
+    @keyframes header__bg-switch {
+      from {
+        background: url(../assets/header__bg1--md.jpg) no-repeat center;
+      }
+  
+      31% {
+        background: url(../assets/header__bg1--md.jpg) no-repeat center;
+      }
+  
+      35% {
+        background: url(../assets/header__bg2--md.jpg) no-repeat center;
+      }
+  
+      64% {
+        background: url(../assets/header__bg2--md.jpg) no-repeat center;
+      }
+  
+      68% { 
+        background: url(../assets/header__bg3--md.jpg) no-repeat center;
+      }
+  
+      98% {
+        background: url(../assets/header__bg3--md.jpg) no-repeat center;
+      }
+  
+      to {
+        background: url(../assets/header__bg1--md.jpg) no-repeat center;
+      }
+    }
+  }  
+
+  @media (min-width: 768px) {
+    &__logobox {
+      display: flex;
+      justify-content: start;
+    }
+
+  }
+
+
+
 }
 
 .night-citi {
-
   padding: 70px 0;
 
   &__textbox {
@@ -88,11 +148,11 @@
     flex-direction: column;
     gap: 25px;
   }
-  
+
   &__title {
     text-align: start;
   }
-  
+
   &__text {
     color: $gray;
   }
@@ -103,6 +163,11 @@
 
   &__img {
     max-width: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    
   }
 
   @media (min-width: 992px) {
@@ -114,11 +179,11 @@
 }
 
 .play {
-
   position: relative;
   padding: 130px 0;
-  background: url(../assets/play__noise-bg-top.png) top repeat-x,
-  url(../assets/play__noise-bg-bot.png) bottom repeat-x;
+  background:
+    url(../assets/play__noise-bg-top.png) top repeat-x,
+    url(../assets/play__noise-bg-bot.png) bottom repeat-x;
   background-color: $black;
 
   &__action {
@@ -143,7 +208,7 @@
   }
 
   &__form-name {
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -157,14 +222,14 @@
   }
 
   &__form-name:focus {
-    color: #FFF;
+    color: #fff;
     background: transparent;
     box-shadow: none;
     border-bottom: 1px solid $gray;
   }
 
   &__form-email {
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -178,7 +243,7 @@
   }
 
   &__form-email:focus {
-    color: #FFF;
+    color: #fff;
     background: transparent;
     box-shadow: none;
     border-bottom: 1px solid $gray;
@@ -195,7 +260,7 @@
   }
 
   &__form-file__title {
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -228,7 +293,7 @@
     justify-content: space-between;
   }
 
-  &__check-input[type=checkbox] {
+  &__check-input[type="checkbox"] {
     width: 14px;
     height: 14px;
     margin-top: 0;
@@ -238,7 +303,7 @@
     box-shadow: none;
   }
 
-  &__check-input:checked[type=checkbox] {
+  &__check-input:checked[type="checkbox"] {
     background-image: url(../assets/check.svg);
     border: 1px solid $gray;
     border-radius: 0;
@@ -247,7 +312,7 @@
   }
 
   &__check-label {
-    color: #FFF;
+    color: #fff;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -270,11 +335,53 @@
       font-size: calc(12px + 0.9vw);
     }
   }
-
 }
 
 .hp {
   background-color: $yellow;
+
+  &__wrapper {
+    padding: 70px 0 70px;
+  }
+
+  &__imgbox-top {
+    padding-bottom: 42px;
+  }
+
+  &__imgbox-bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+  }
+
+  &__img {
+    padding: 0;
+    width: 100%;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    color: $black;
+    font-weight: 400;
+    padding-bottom: 27px;
+  }
+
+  &__list {
+    color: $black;
+    font-weight: 400;
+    padding-bottom: 40px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 15px;
+  }
 
   &__other-btn {
     background: $black;
@@ -296,5 +403,96 @@
 
 .buy {
   background-color: $black;
+
+  &__wrapper {
+    padding: 0 0 70px;
+  }
+
+  &__imgsidebox {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__img-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__textbox {
+    padding-top: 40px;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    color: #52BEDC;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+
+  &__list {
+    padding: 20px 0 40px;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    gap: 18px;
+    padding-bottom: 15px;
+  }
+
+  &__imgbox {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__imgrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
+.footer {
+  background-color: $white;
+
+  &__logo {
+    padding: 40px 0 25px;
+  }
+
+  &__company-logo {
+    padding-bottom: 25px;
+  }
+
+  &__licbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0 !important;
+    background-color: $light-gray;
+    color: $black;
+    font-weight: 400;
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 13px 0;
+  }
+
+  
+}
