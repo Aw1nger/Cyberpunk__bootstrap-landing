@@ -18,17 +18,25 @@
       <div class="container">
         <nav class="header__nav">
           <div class="header__nav-wrapper">
-            <div class="row gy-3">
-              <div
-                class="header__logobox col-sm"
-              >
-                <img src="assets/Logo.svg" alt="" class="header__logo" />
+            <div class="row gy-3 justify-content-between align-items-center">
+              <div class="header__logobox col-sm-4">
+                <img
+                  class="header__logo"
+                  src="assets/header__logo--mobile.svg"
+                  data-src-sm="assets/header__logo--mobile.svg"
+                  data-src-md="assets/header__logo--md.svg"
+                  data-src-lg="assets/header__logo--md.svg"
+                  alt="logo"
+                />
               </div>
-              <div class="col-sm">
+              <div class="col-sm-5">
                 <div class="d-flex justify-content-between">
                   <a href="#" class="header__networks">
                     <img
                       src="assets/youtube.svg"
+                      data-src-sm="assets/youtube.svg"
+                      data-src-md="assets/youtube--lg.svg"
+                      data-src-lg="assets/youtube--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -36,6 +44,9 @@
                   <a href="#" class="header__networks">
                     <img
                       src="assets/vk.svg"
+                      data-src-sm="assets/vk.svg"
+                      data-src-md="assets/vk--lg.svg"
+                      data-src-lg="assets/vk--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -43,6 +54,9 @@
                   <a href="#" class="header__networks">
                     <img
                       src="assets/facebook.svg"
+                      data-src-sm="assets/facebook.svg"
+                      data-src-md="assets/facebook--lg.svg"
+                      data-src-lg="assets/facebook--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -50,6 +64,9 @@
                   <a href="#" class="header__networks">
                     <img
                       src="assets/twitter.svg"
+                      data-src-sm="assets/twitter.svg"
+                      data-src-md="assets/twitter--lg.svg"
+                      data-src-lg="assets/twitter--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -57,6 +74,9 @@
                   <a href="#" class="header__networks">
                     <img
                       src="assets/twitch.svg"
+                      data-src-sm="assets/twitch.svg"
+                      data-src-md="assets/twitch--lg.svg"
+                      data-src-lg="assets/twitch--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -64,6 +84,9 @@
                   <a href="#" class="header__networks">
                     <img
                       src="assets/instagram.svg"
+                      data-src-sm="assets/instagram.svg"
+                      data-src-md="assets/instagram--lg.svg"
+                      data-src-lg="assets/instagram--lg.svg"
                       alt=""
                       class="header__networks-img"
                     />
@@ -73,11 +96,11 @@
             </div>
           </div>
         </nav>
-        <div class="card header__card">
+        <div class="header__card card">
           <div
-            class="card-body align-items-center d-flex flex-column justify-content-around"
+            class="header__card-wrapper card-body justify-content-around d-flex flex-column"
           >
-            <h1 class="card-title">Доступно на всех платформах</h1>
+            <h1 class="header__card-title">Доступно на всех платформах</h1>
             <a href="#" class="btn header__card-btn">Узнать больше</a>
           </div>
         </div>
@@ -338,7 +361,12 @@
             <div class="row">
               <div class="col-md hp__imgbox">
                 <div class="hp__imgbox-top">
-                  <img src="assets/hp_img1.png" alt="" class="hp__img" />
+                  <img
+                    src="assets/hp_img1.png"
+                    data-src-md="assets/hp_img1--md.png"
+                    alt=""
+                    class="hp__img"
+                  />
                 </div>
                 <div class="hp__imgbox-bot">
                   <img src="assets/hp_img2.svg" alt="" class="hp__img" />
@@ -503,5 +531,6 @@
       </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/update_img.js"></script>
   </body>
 </html>
