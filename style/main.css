@@ -10842,7 +10842,9 @@ dl {
     font-size: 18px;
     line-height: 34px;
   }
-  h1, .h1 {
+  h1, .h1,
+  h2,
+  .h2 {
     font-size: 62px;
   }
 }
@@ -11124,6 +11126,7 @@ dl {
   color: #000000;
   border: none;
   padding: 15px 50px;
+  max-width: 182px;
   border-radius: 0;
   transition: all 1s ease-in-out;
 }
@@ -11135,7 +11138,7 @@ dl {
 .play__check-form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
 }
 .play__check-input[type=checkbox] {
   width: 14px;
@@ -11161,7 +11164,7 @@ dl {
   font-weight: 300;
   line-height: normal;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .play__action {
     width: calc(52px + 2vw);
     height: calc(52px + 2vw);
@@ -11175,6 +11178,28 @@ dl {
     font-size: calc(12px + 0.9vw);
   }
 }
+@media (min-width: 1024px) {
+  .play__form-name {
+    padding-top: 98px;
+  }
+  .play__form-file__btn {
+    max-width: 192px;
+  }
+}
+@media (min-width: 1200px) {
+  .play__title {
+    padding-left: 32px;
+  }
+  .play__text {
+    padding: 25px 0;
+  }
+  .play__form-name {
+    padding-top: 73px;
+  }
+  .play__form-email {
+    padding-top: 35px;
+  }
+}
 
 .hp {
   background-color: #F8F200;
@@ -11182,13 +11207,15 @@ dl {
 .hp__wrapper {
   padding: 70px 0 70px;
 }
-.hp__imgbox-top {
-  padding-bottom: 42px;
+.hp__imgbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 .hp__imgbox-bot {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 13px;
 }
 .hp__img {
@@ -11226,6 +11253,16 @@ dl {
   color: #F8F200;
   transform: scale(1.1);
   background: #000000 !important;
+}
+@media (min-width: 1024px) {
+  .hp__imgbox {
+    max-height: 570px;
+  }
+  .hp__imgbox-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .buy {

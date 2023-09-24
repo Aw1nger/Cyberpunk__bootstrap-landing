@@ -128,26 +128,28 @@
               class="row d-sm-flex flex-sm-column night-citi__imgbox-flex g-32"
             >
               <div class="col-lg-4 p-0">
-                <div class="row d-lg-flex flex-lg-column g-32">
-                  <div class="col-sm p-0">
-                    <img
-                      src="assets/night-citi-sm--01.jpg"
-                      data-src-sm="assets/night-citi-sm--01.jpg"
-                      data-src-md="assets/night-citi-md--01.png"
-                      data-src-lg="assets/night-citi-lg--01.jpg"
-                      alt=""
-                      class="night-citi__img"
-                    />
-                  </div>
-                  <div class="col-sm p-0">
-                    <img
-                      src="assets/night-citi-sm--02.jpg"
-                      data-src-sm="assets/night-citi-sm--02.jpg"
-                      data-src-md="assets/night-citi-md--02.png"
-                      data-src-lg="assets/night-citi-lg--02.jpg"
-                      alt=""
-                      class="night-citi__img"
-                    />
+                <div class="container-xl">
+                  <div class="row d-lg-flex flex-lg-column g-32">
+                    <div class="col-sm p-0">
+                      <img
+                        src="assets/night-citi-sm--01.jpg"
+                        data-src-sm="assets/night-citi-sm--01.jpg"
+                        data-src-md="assets/night-citi-md--01.png"
+                        data-src-lg="assets/night-citi-lg--01.jpg"
+                        alt=""
+                        class="night-citi__img"
+                      />
+                    </div>
+                    <div class="col-sm p-0">
+                      <img
+                        src="assets/night-citi-sm--02.jpg"
+                        data-src-sm="assets/night-citi-sm--02.jpg"
+                        data-src-md="assets/night-citi-md--02.png"
+                        data-src-lg="assets/night-citi-lg--02.jpg"
+                        alt=""
+                        class="night-citi__img"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -168,7 +170,9 @@
       <section class="play">
         <div class="container">
           <div class="play__wrapper">
-            <div class="row flex-md-row-reverse d-lg-none">
+            <div
+              class="row d-sm-flex d-md-flex d-lg-flex d-xl-none flex-md-row-reverse"
+            >
               <div class="col-md">
                 <div
                   class="row justify-content-center align-items-center flex-md-column g-2"
@@ -264,17 +268,15 @@
                 </div>
               </div>
             </div>
-            <div
-              class="row flex-md-row-reverse d-none d-sm-none d-md-none d-md-none d-lg-flex"
-            >
+            <div class="row d-none d-xl-flex d-xxl-flex flex-xl-row-reverse">
               <div class="row">
                 <div
                   class="col-3 play__action d-flex justify-content-center align-items-center"
                 >
                   <p class="play__action-text">Акция</p>
                 </div>
-                <div class="col-9">
-                  <h2 class="h2">Играй и выигрывай!</h2>
+                <div class="col-9 d-flex align-items-end">
+                  <h2 class="play__title h2">Играй и выигрывай!</h2>
                 </div>
                 <div class="col-12">
                   <p class="play__text">
@@ -366,22 +368,45 @@
         <div class="container">
           <div class="hp__wrapper">
             <div class="row">
-              <div class="col-md hp__imgbox">
+              <div class="col-lg-6 hp__imgbox">
                 <div class="hp__imgbox-top">
                   <img
-                    src="assets/hp_img1.png"
+                    src="assets/hp_img1--mobile.png"
+                    data-src-sm="assets/hp_img1--mobile.png"
                     data-src-md="assets/hp_img1--md.png"
+                    data-src-lg="assets/hp_img1--lg.png"
                     alt=""
                     class="hp__img"
                   />
                 </div>
                 <div class="hp__imgbox-bot">
-                  <img src="assets/hp_img2.svg" alt="" class="hp__img" />
-                  <img src="assets/hp_img3.svg" alt="" class="hp__img" />
-                  <img src="assets/hp__img4.svg" alt="" class="hp__img" />
+                  <img
+                    src="assets/hp_img2--mobile.svg"
+                    data-src-sm="assets/hp_img2--mobile.svg"
+                    data-src-md="assets/hp_img2--md.svg"
+                    data-src-lg="assets/hp_img2--md.svg"
+                    alt=""
+                    class="hp__img"
+                  />
+                  <img
+                    src="assets/hp_img3--mobile.svg"
+                    data-src-sm="assets/hp_img3--mobile.svg"
+                    data-src-md="assets/hp_img3--md.svg"
+                    data-src-lg="assets/hp_img3--md.svg"
+                    alt=""
+                    class="hp__img"
+                  />
+                  <img
+                    src="assets/hp__img4--mobile.svg"
+                    data-src-sm="assets/hp__img4--mobile.svg"
+                    data-src-md="assets/hp__img4--md.svg"
+                    data-src-lg="assets/hp__img4--md.svg"
+                    alt=""
+                    class="hp__img"
+                  />
                 </div>
               </div>
-              <div class="col-md gy-5">
+              <div class="col-lg-6 gy-5">
                 <h1 class="hp__title">Полное погружение вместе с HP</h1>
                 <p class="hp__text">
                   Погрузись в современные экшен-игры с реалистичным изображением
@@ -508,7 +533,14 @@
           <div class="col">
             <div class="col d-flex align-items-center justify-content-center">
               <a href="#" class="footer__logo-link">
-                <img src="assets/footer_logo.svg" alt="" class="footer__logo" />
+                <img
+                  class="footer__logo"
+                  src="assets/header__logo--mobile.svg"
+                  data-src-sm="assets/header__logo--mobile.svg"
+                  data-src-md="assets/header__logo--md.svg"
+                  data-src-lg="assets/header__logo--md.svg"
+                  alt="logo"
+                />
               </a>
             </div>
             <div class="col d-flex align-items-center justify-content-center">
