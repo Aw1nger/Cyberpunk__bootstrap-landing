@@ -10838,6 +10838,10 @@ dl {
 }
 
 @media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 34px;
+  }
   h1, .h1 {
     font-size: 62px;
   }
@@ -11029,7 +11033,7 @@ dl {
   max-width: 100%;
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .night-citi__imgbox-flex {
     display: flex !important;
     flex-direction: row !important;

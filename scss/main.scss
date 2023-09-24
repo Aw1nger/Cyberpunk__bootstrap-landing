@@ -133,7 +133,7 @@
 
   @media (min-width: 768px) {
     min-height: 1000px;
-    
+
     &__logobox {
       display: flex;
       justify-content: start;
@@ -198,8 +198,6 @@
       right: 320px;
       bottom: 0;
     }
-
-    
   }
 }
 
@@ -229,14 +227,13 @@
     width: 100%;
   }
 
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     &__imgbox-flex {
       display: flex !important;
       flex-direction: row !important;
     }
+
+    
   }
 }
 

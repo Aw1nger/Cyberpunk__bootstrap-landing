@@ -67,6 +67,11 @@ dl {
 }
 
 @media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
   h1 {
     font-size: 62px;
   }
