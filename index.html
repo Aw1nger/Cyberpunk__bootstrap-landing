@@ -406,7 +406,7 @@
                   />
                 </div>
               </div>
-              <div class="col-lg-6 gy-5">
+              <div class="col-lg-6">
                 <h1 class="hp__title">Полное погружение вместе с HP</h1>
                 <p class="hp__text">
                   Погрузись в современные экшен-игры с реалистичным изображением
@@ -452,11 +452,14 @@
         <div class="buy__wrapper">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md buy__imgsidebox">
+              <div class="col-lg-4 col-xxl-6 buy__imgsidebox">
                 <img
-                  src="assets/buy_img--mobile.jpg"
+                  src="assets/buy_img--lg.jpg"
+                  data-src="assets/buy_img--lg.jpg"
+                  data-src-md="assets/buy_img--md.jpg"
                   alt=""
                   class="buy__img-side"
+                  id="buy__img-side"
                 />
               </div>
               <div class="col buy__textbox">
@@ -528,9 +531,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row footer__top">
-          <div class="col">
+          <div class="col-lg">
             <div class="col d-flex align-items-center justify-content-center">
               <a href="#" class="footer__logo-link">
                 <img
@@ -553,7 +556,7 @@
               </a>
             </div>
           </div>
-          <div class="col footer__licbox">
+          <div class="col-lg footer__licbox">
             <div class="col d-flex justify-content-center">
               <a href="#" class="footer__lic-link"> Лицензия </a>
             </div>
@@ -571,5 +574,6 @@
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/update_img.js"></script>
+    <script src="js/buy__side-img.js"></script>
   </body>
 </html>
