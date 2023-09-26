@@ -7,12 +7,27 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  background-color: #f8fb91; /* Цвет скроллбара */
+  border-radius: 5px; /* Скругленные углы */
+}
+
+/* Стилизация трека (фона) скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона скроллбара */
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: $white;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 32px;
   background: $white;
 }

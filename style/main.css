@@ -10777,12 +10777,27 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  background-color: #f8fb91; /* Цвет скроллбара */
+  border-radius: 5px; /* Скругленные углы */
+}
+
+/* Стилизация трека (фона) скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона скроллбара */
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 32px;
   background: #fff;
 }
@@ -10892,6 +10907,12 @@ dl {
   display: flex;
   justify-content: center;
 }
+.header__networks-img {
+  transition: all 1s ease-in-out;
+}
+.header__networks-img:hover, .header__networks-img:focus {
+  scale: 1.1;
+}
 .header__card {
   position: absolute;
   right: 0;
@@ -10918,7 +10939,7 @@ dl {
   transition: all 1s ease-in-out;
 }
 .header__card-btn:hover, .header__card-btn:focus, .header__card-btn:active {
-  color: #F8F200;
+  color: #F8F200 !important;
   transform: scale(1.1);
   background: #000000 !important;
 }
@@ -11123,7 +11144,7 @@ dl {
 }
 .play__form-file__btn {
   background: #F8F200;
-  color: #000000;
+  color: #000000 !important;
   border: none;
   padding: 15px 50px;
   max-width: 182px;
@@ -11131,7 +11152,7 @@ dl {
   transition: all 1s ease-in-out;
 }
 .play__form-file__btn:hover, .play__form-file__btn:focus, .play__form-file__btn:active {
-  color: #000000;
+  color: #000000 !important;
   transform: scale(1.1);
   background: #F8F200 !important;
 }
@@ -11164,7 +11185,7 @@ dl {
   font-weight: 300;
   line-height: normal;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .play__action {
     width: calc(52px + 2vw);
     height: calc(52px + 2vw);
@@ -11245,14 +11266,14 @@ dl {
 }
 .hp__other-btn {
   background: #000000;
-  color: #F8F200;
+  color: #F8F200 !important;
   border: none;
   padding: 19px 65px;
   border-radius: 0;
   transition: all 1s ease-in-out;
 }
 .hp__other-btn:hover, .hp__other-btn:focus, .hp__other-btn:active {
-  color: #F8F200;
+  color: #F8F200 !important;
   transform: scale(1.1);
   background: #000000 !important;
 }
@@ -11315,6 +11336,12 @@ dl {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.buy__platform-img {
+  transition: all 1s ease-in-out;
+}
+.buy__platform-img:hover, .buy__platform-img:focus {
+  scale: 1.1;
 }
 @media (min-width: 1024px) {
   .buy__textbox {

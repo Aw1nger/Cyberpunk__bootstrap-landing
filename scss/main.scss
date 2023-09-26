@@ -56,6 +56,15 @@
     justify-content: center;
   }
 
+  &__networks-img{
+    transition: all 1s ease-in-out;
+  }
+
+  &__networks-img:hover,
+  &__networks-img:focus {
+    scale: 1.1;
+  }
+
   &__card {
     position: absolute;
     right: 0;
@@ -88,7 +97,7 @@
   &__card-btn:hover,
   &__card-btn:focus,
   &__card-btn:active {
-    color: $yellow;
+    color: $yellow !important;
     transform: scale(1.1);
     background: $black !important;
   }
@@ -232,8 +241,6 @@
       display: flex !important;
       flex-direction: row !important;
     }
-
-    
   }
 }
 
@@ -331,7 +338,7 @@
 
   &__form-file__btn {
     background: $yellow;
-    color: $black;
+    color: $black !important;
     border: none;
     padding: 15px 50px;
     max-width: 182px;
@@ -342,7 +349,7 @@
   &__form-file__btn:hover,
   &__form-file__btn:focus,
   &__form-file__btn:active {
-    color: $black;
+    color: $black !important;
     transform: scale(1.1);
     background: $yellow !important;
   }
@@ -380,7 +387,7 @@
     line-height: normal;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     &__action {
       width: calc(52px + 2vw);  
       height: calc(52px + 2vw);
@@ -477,7 +484,7 @@
 
   &__other-btn {
     background: $black;
-    color: $yellow;
+    color: $yellow !important;
     border: none;
     padding: 19px 65px;
     border-radius: 0;
@@ -487,7 +494,7 @@
   &__other-btn:hover,
   &__other-btn:focus,
   &__other-btn:active {
-    color: $yellow;
+    color: $yellow !important;
     transform: scale(1.1);
     background: $black !important;
   }
@@ -562,6 +569,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  &__platform-img {
+    transition: all 1s ease-in-out;
+  }
+
+  &__platform-img:hover,
+  &__platform-img:focus {
+    scale: 1.1;
   }
 
   @media (min-width: 1024px) {
