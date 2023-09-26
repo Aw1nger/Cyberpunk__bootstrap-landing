@@ -583,11 +583,11 @@
 .footer {
   background-color: $white;
 
-  &__logo {
-    padding: 40px 0 25px;
+  &__wrapper-top {
+    padding: 40px 0 0;
   }
 
-  &__company-logo {
+  &__logobox {
     padding-bottom: 25px;
   }
 
@@ -614,6 +614,14 @@
   }
 
   @media (min-width: 1024px) {
+    &__wrapper-top {
+      padding: 13px 0;
+    }
+
+    &__logobox {
+      padding: 0;
+    }
+
     &__licbox {
       background-color: $white;
       display: flex;

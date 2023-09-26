@@ -11333,10 +11333,10 @@ dl {
 .footer {
   background-color: #fff;
 }
-.footer__logo {
-  padding: 40px 0 25px;
+.footer__wrapper-top {
+  padding: 40px 0 0;
 }
-.footer__company-logo {
+.footer__logobox {
   padding-bottom: 25px;
 }
 .footer__licbox {
@@ -11360,6 +11360,12 @@ dl {
   padding: 13px 0;
 }
 @media (min-width: 1024px) {
+  .footer__wrapper-top {
+    padding: 13px 0;
+  }
+  .footer__logobox {
+    padding: 0;
+  }
   .footer__licbox {
     background-color: #fff;
     display: flex;
